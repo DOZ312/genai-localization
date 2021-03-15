@@ -6,7 +6,7 @@ const path = require("path");
 	let language = process.argv[2];
 	while (true) {
 		if (language) break;
-		language = await awaitResponse("Write a name of language to check: ");
+		language = await awaitResponse("ua");
 		if (!language.length) continue;
 		else break;
 	}
